@@ -1,7 +1,7 @@
 clc;
 clear;
 
-n = 1000;
+n = 10000;
 
 x = rand(n, 1)*2-1;
 r = rand(n, 1)*2-1;

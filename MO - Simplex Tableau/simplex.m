@@ -1,10 +1,11 @@
 function[] = simplex(P,A,b)
+  simplex_print(P, A, b, 0, [1:size(b)]');
+
   [P_, A_, b_, f_, S_] = simplex_init(P, A, b);
   
   P = -P_;
   A = A_;
   b = b_;
-  simplex_print(P, A, b, 0, [1:size(b)]');
   simplex_print(P_, A_, b_, f_, S_);
 
   for i = 1:100
